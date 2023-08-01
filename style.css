@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  }
+  
+  header {
+    background: rgb(44,86,87);
+    background: radial-gradient(circle, rgba(44,86,87,1) 0%, rgba(157,156,76,1) 100%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .centered-content {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Margen automático para centrar */
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .operations-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 10px; /* Espacio entre el título y las imágenes */
+  }
+  
+  .logos img {
+    width: 25px; /* Tamaño de las imágenes */
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .logos img:hover::after {
+    content: attr(data-operation);
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .definitions-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Espacio entre las imágenes y las definiciones */
+  }
+  /* Estilos para el resultado */
+.resultado {
+    font-weight: bold;
+  }
+  
+  .resultado-1 {
+    color: #ff5733; /* Color de resultado para Aritmética */
+    text-decoration: underline dotted; /* Subrayado decorativo */
+  }
+  
+  .resultado-2 {
+    color: #337aff; /* Color de resultado para Potencia */
+    text-decoration: underline wavy; /* Subrayado decorativo */
+  }
+  
+  .operation-definition {
+    width: calc(50% - 20px); /* Ancho de las columnas con espacio entre ellas */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre las definiciones */
+    text-align: justify;
+  }
+  
+  .operation-definition img {
+    width: 40px; /* Tamaño de las imágenes de definición */
+    height: 40px;
+    margin-bottom: 10px; /* Espacio entre la imagen y el título */
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-container label {
+    margin-bottom: 5px; /* Espacio entre las etiquetas y los campos de entrada */
+  }
